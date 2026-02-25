@@ -1,0 +1,813 @@
+{
+  "info": {
+    "_postman_id": "ab17c36c-6d74-4ccd-a8f3-3fbac1e76bf9",
+    "name": "A5er El 3on2oodApp",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "39219323"
+  },
+  "item": [
+    {
+      "name": "product",
+      "item": [
+        {
+          "name": "createProduct",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "System eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzcxNzYzNTk2LCJleHAiOjEuOGUrMTE3fQ.UWa3ETMOKqEIee5Uh1N1QU1GOzxrymdfVHcCw3T_hUc",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "attachment",
+                  "type": "file",
+                  "uuid": "8cba3119-e006-47bb-894d-4228ced379e6",
+                  "src": "postman-cloud:///1efe019d-c0a4-4700-8534-f015cfc65802"
+                },
+                {
+                  "key": "name",
+                  "value": "dress baby",
+                  "type": "text",
+                  "uuid": "9969ceee-76b0-40a9-8b10-24d3333a59bf"
+                },
+                {
+                  "key": "color",
+                  "value": "gshxghsd",
+                  "type": "text",
+                  "uuid": "6b598606-7334-4e15-81b6-a8da0fe4d62b"
+                },
+                {
+                  "key": "categoryId",
+                  "value": "1",
+                  "type": "text",
+                  "uuid": "087f279d-952d-40ff-8a5b-1e203b3aba71"
+                },
+                {
+                  "key": "description",
+                  "value": "size m ",
+                  "type": "text",
+                  "uuid": "4720facb-4c8a-4c97-8947-1b56877ec781"
+                },
+                {
+                  "key": "isAvailable",
+                  "value": "true",
+                  "type": "text",
+                  "uuid": "a7443af2-dfe9-4f6f-80b4-ab5faaf69ac7"
+                },
+                {
+                  "key": "price",
+                  "value": "50000",
+                  "type": "text",
+                  "uuid": "6bd6fe01-5fa4-4456-81e0-991797c91705"
+                },
+                {
+                  "key": "discountId",
+                  "value": "1",
+                  "type": "text",
+                  "uuid": "4d63a84f-c28d-4ebf-a835-f30d3d872d16"
+                }
+              ]
+            },
+            "url": {
+              "raw": "localhost:3000/product/",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "product",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update product",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "System eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzcxNzYzNTk2LCJleHAiOjEuOGUrMTE3fQ.UWa3ETMOKqEIee5Uh1N1QU1GOzxrymdfVHcCw3T_hUc",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "attachment",
+                  "type": "file",
+                  "uuid": "2e75e19c-7856-4e57-ad2c-b718aa931391",
+                  "src": "postman-cloud:///1efe019d-c0a4-4700-8534-f015cfc65802",
+                  "disabled": true
+                },
+                {
+                  "key": "isAvailable",
+                  "value": "true",
+                  "type": "text",
+                  "uuid": "64f0f584-2c04-4374-9798-5a4ee1250de5"
+                },
+                {
+                  "key": "name",
+                  "value": "lapopa",
+                  "type": "text",
+                  "uuid": "15c03b92-200f-4829-a0b3-7b5075e32d07"
+                },
+                {
+                  "key": "categoryId",
+                  "value": "3",
+                  "type": "text",
+                  "uuid": "8af3e685-9125-4f72-8484-4b95481489b3"
+                },
+                {
+                  "key": "discountId",
+                  "value": "3",
+                  "type": "text",
+                  "uuid": "7aed6c73-ac7b-46c2-b410-98ca9f803361"
+                }
+              ]
+            },
+            "url": {
+              "raw": "localhost:3000/product/3",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "product",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete prodect",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3OWUyYjk0YjZjMTIzZjJjMGVmMWI1NiIsImlhdCI6MTczODQzNzI2NiwiZXhwIjoxLjhlKzExN30.O0lCbep_H5rnEoVzCjnVudEkQ6HMKK-P0GbLrF9oVd8",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "localhost:3000/product/9/deleteProduct",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "product",
+                "9",
+                "deleteProduct"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get products",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:3000/product/getProducts?page=-4&size=4",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "product",
+                "getProducts"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "-4"
+                },
+                {
+                  "key": "size",
+                  "value": "4"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get product",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:3000/product/1/getProduct",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "product",
+                "1",
+                "getProduct"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "filter products",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "attachment",
+                  "type": "file",
+                  "uuid": "8cba3119-e006-47bb-894d-4228ced379e6",
+                  "src": "postman-cloud:///1efe019d-c0a4-4700-8534-f015cfc65802"
+                },
+                {
+                  "key": "name",
+                  "value": "laptop",
+                  "type": "text",
+                  "uuid": "9969ceee-76b0-40a9-8b10-24d3333a59bf"
+                },
+                {
+                  "key": "color",
+                  "value": "gshxghsd",
+                  "type": "text",
+                  "uuid": "6b598606-7334-4e15-81b6-a8da0fe4d62b"
+                },
+                {
+                  "key": "categoryId",
+                  "value": "1",
+                  "type": "text",
+                  "uuid": "087f279d-952d-40ff-8a5b-1e203b3aba71"
+                },
+                {
+                  "key": "brand",
+                  "value": "sogo",
+                  "type": "text",
+                  "uuid": "96906f8e-bcf2-4644-bee9-f8533a2e62fe"
+                },
+                {
+                  "key": "quantity",
+                  "value": "50",
+                  "type": "text",
+                  "uuid": "a9f87cf7-d57c-47b1-8296-23368d7e5d88"
+                },
+                {
+                  "key": "length",
+                  "value": "25",
+                  "type": "text",
+                  "uuid": "4720facb-4c8a-4c97-8947-1b56877ec781"
+                },
+                {
+                  "key": "width",
+                  "value": "10",
+                  "type": "text",
+                  "uuid": "4b451f60-82a3-46dd-b3b2-0063b7ff8c9e"
+                },
+                {
+                  "key": "isAccept",
+                  "value": "true",
+                  "type": "text",
+                  "uuid": "a7443af2-dfe9-4f6f-80b4-ab5faaf69ac7"
+                },
+                {
+                  "key": "userId",
+                  "value": "4",
+                  "type": "text",
+                  "uuid": "62889449-24f2-4ebf-8208-81c6db837685"
+                }
+              ]
+            },
+            "url": {
+              "raw": "localhost:3000/product/filter?name=lapo&isAvailable=1",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "product",
+                "filter"
+              ],
+              "query": [
+                {
+                  "key": "name",
+                  "value": "lapo"
+                },
+                {
+                  "key": "isAvailable",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "category",
+      "item": [
+        {
+          "name": "createCategory",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "System eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzcxNzYzNTk2LCJleHAiOjEuOGUrMTE3fQ.UWa3ETMOKqEIee5Uh1N1QU1GOzxrymdfVHcCw3T_hUc",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "attachment",
+                  "type": "file",
+                  "uuid": "8cba3119-e006-47bb-894d-4228ced379e6",
+                  "src": "postman-cloud:///1efe019d-c0a4-4700-8534-f015cfc65802"
+                },
+                {
+                  "key": "name",
+                  "value": "lemo",
+                  "type": "text",
+                  "uuid": "9969ceee-76b0-40a9-8b10-24d3333a59bf"
+                },
+                {
+                  "key": "description",
+                  "value": "سايز 50 والطول 130 cm",
+                  "type": "text",
+                  "uuid": "4720facb-4c8a-4c97-8947-1b56877ec781"
+                }
+              ]
+            },
+            "url": {
+              "raw": "localhost:3000/category/",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "category",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update category",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "System eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzcxNzYzNTk2LCJleHAiOjEuOGUrMTE3fQ.UWa3ETMOKqEIee5Uh1N1QU1GOzxrymdfVHcCw3T_hUc",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "attachment",
+                  "type": "file",
+                  "uuid": "2e75e19c-7856-4e57-ad2c-b718aa931391",
+                  "src": "postman-cloud:///1efe019d-c0a4-4700-8534-f015cfc65802",
+                  "disabled": true
+                },
+                {
+                  "key": "description",
+                  "value": "size m",
+                  "type": "text",
+                  "uuid": "449759cf-85ae-463f-8a6b-536f4d89920a"
+                },
+                {
+                  "key": "name",
+                  "value": "laptop",
+                  "type": "text",
+                  "uuid": "58cc585c-1060-487d-9748-fc75a84fe1e9"
+                }
+              ]
+            },
+            "url": {
+              "raw": "localhost:3000/category/1",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "category",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete category",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "System eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzcxNzYzNTk2LCJleHAiOjEuOGUrMTE3fQ.UWa3ETMOKqEIee5Uh1N1QU1GOzxrymdfVHcCw3T_hUc",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "localhost:3000/category/2/deleteCategory",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "category",
+                "2",
+                "deleteCategory"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "getcategories",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:3000/category/getCategories?page=1&size=2",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "category",
+                "getCategories"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "size",
+                  "value": "2"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "getcategory",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "localhost:3000/category/1",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "category",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "discount",
+      "item": [
+        {
+          "name": "create discount",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "System eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzcxNzYzNTk2LCJleHAiOjEuOGUrMTE3fQ.UWa3ETMOKqEIee5Uh1N1QU1GOzxrymdfVHcCw3T_hUc",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"discountPercentage\": 20,\r\n    \"startDate\": \"2025-05-01T00:00:00Z\",\r\n    \"endDate\": \"2025-06-01T00:00:00Z\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:3000/discount/",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "discount",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update discount",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "System eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzcxNzYzNTk2LCJleHAiOjEuOGUrMTE3fQ.UWa3ETMOKqEIee5Uh1N1QU1GOzxrymdfVHcCw3T_hUc",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n   \"discountPercentage\": 10\r\n    //\"startDate\": \"2025-03-01T00:00:00Z\",\r\n    //\"endDate\": \"2025-06-01T00:00:00Z\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:3000/discount/2/updateDiscount",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "discount",
+                "2",
+                "updateDiscount"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete discount",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "System eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzcxNzYzNTk2LCJleHAiOjEuOGUrMTE3fQ.UWa3ETMOKqEIee5Uh1N1QU1GOzxrymdfVHcCw3T_hUc",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "localhost:3000/discount/5/deleteDiscount",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "discount",
+                "5",
+                "deleteDiscount"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get discounts",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "System eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzcxNzYzNTk2LCJleHAiOjEuOGUrMTE3fQ.UWa3ETMOKqEIee5Uh1N1QU1GOzxrymdfVHcCw3T_hUc",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "localhost:3000/discount/?page=1&size=2",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "discount",
+                ""
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1",
+                  "type": "text"
+                },
+                {
+                  "key": "size",
+                  "value": "2",
+                  "type": "text"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get discount",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "System eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzcxNzYzNTk2LCJleHAiOjEuOGUrMTE3fQ.UWa3ETMOKqEIee5Uh1N1QU1GOzxrymdfVHcCw3T_hUc",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "localhost:3000/discount/1",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "discount",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "removeDiscount",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "System eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzcxNzYzNTk2LCJleHAiOjEuOGUrMTE3fQ.UWa3ETMOKqEIee5Uh1N1QU1GOzxrymdfVHcCw3T_hUc",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "localhost:3000/discount/6",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "discount",
+                "6"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "auth",
+      "item": [
+        {
+          "name": "signup",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\"email\":\"halimaramadan840@gmail.com\",\r\n\"password\":\"123456Cc\",\r\n\"role\": \"admin\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:3000/auth/signup",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "auth",
+                "signup"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n     \"email\":\"halimaramadan840@gmail.com\",\r\n     \"password\":\"123456Cc\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:3000/auth/login",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "auth",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "forgetPassword",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n     \"email\":\"halimaramadan840@gmail.com\"\r\n      \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:3000/auth/forgetPassword",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "auth",
+                "forgetPassword"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "resetPassword",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\"email\":\"halimaramadan840@gmail.com\",\r\n\"password\":\"123456Mm\",\r\n\"confirmationPassword\":\"123456Mm\",\r\n\"code\":\"1715\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:3000/auth/resetPassword",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "auth",
+                "resetPassword"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
